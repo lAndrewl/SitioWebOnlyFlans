@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+{% block titulo %}
+    Acerca
+{% endblock %}
+{% block contenido %}
+{% load static %}
+<div class="container about-container margen-contenido">
+    <div class="about-content">
+        <p>¡Bienvenido a <strong>OnlyFlans</strong>! Somos una tienda en línea dedicada a ofrecerte los flanes más deliciosos y auténticos, elaborados con amor y experiencia.</p>
+        <img src="{% static 'IMG/flan_acerca.jpg' %}" class="img-acerca" alt="Un delicioso flan de caramelo">
+        <p><strong>OnlyFlans</strong> es el resultado de 40 años de pasión y dedicación en el arte de preparar flanes. Nuestro fundador, Don Manuel, es un abuelo de 60 años que ha dedicado su vida a la creación de flanes irresistibles. Desde sus primeros días en el negocio, Don Manuel ha perfeccionado su receta y técnica para asegurar que cada flan que vendemos sea una verdadera obra maestra de sabor.</p>
+        <img src="{% static 'IMG/imagen_abuelo_flan.jpg' %}" class="img-acerca" alt="Don Manuel, el maestro de los flanes">
+        <p>Don Manuel comenzó su carrera en el mundo de los flanes cuando era joven, y a lo largo de los años ha construido una reputación envidiable por la calidad y el sabor de sus productos. Su experiencia y dedicación se reflejan en cada bocado de nuestros flanes, los cuales están hechos con ingredientes frescos y de la más alta calidad.</p>
+        <p>En <strong>OnlyFlans</strong>, nos enorgullece ofrecer una variedad de flanes que van desde el clásico flan de caramelo hasta opciones innovadoras que sorprenden y deleitan a nuestros clientes. Cada flan es elaborado con esmero y siguiendo las tradiciones que Don Manuel ha transmitido a lo largo de las décadas.</p>
+        <img src="{% static 'IMG/sueño_flan_acerca.jpg' %}" class="img-acerca-2" alt="Una variedad de flanes en exhibición">
+        <p>Queremos compartir con usted no solo nuestros deliciosos flanes, sino también la historia de un hombre que ha dedicado su vida a esta dulce pasión. Agradecemos su apoyo y confianza en <strong>OnlyFlans</strong> y esperamos que disfrute de cada flan tanto como nosotros disfrutamos creándolos.</p>
+        
+        <p>¡Gracias por visitarnos y por ser parte de nuestra historia!</p>
+    </div>
+</div>
+{% endblock %}

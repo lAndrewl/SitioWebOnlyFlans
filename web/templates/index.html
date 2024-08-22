@@ -1,0 +1,25 @@
+{% extends "./base.html" %}
+{% block titulo %}
+    Inicio
+{% endblock %}
+{% block contenido %}
+<div class="container margen-contenido">
+    <div class="row">
+        {% for flan in flanes_publicos %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card" style="width: 100%;">
+                <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen Flan">
+                <div class="card-body">
+                    <h5 class="card-title">{{ flan.name }}</h5>
+                    <p class="card-text">{{ flan.description }}</p>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">Precio: CLP {{ flan.precio }}</p>
+                    <a href="#" class="btn btn-primary">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

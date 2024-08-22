@@ -1,0 +1,105 @@
+body {
+    /*background-image: url('{% static "IMG/imagen_fondo.jpg" %}');*/
+    /*background-repeat: repeat; /* Puedes usar 'no-repeat' si no deseas que se repita */
+    /*background-size: cover; /* Cambia a 'contain' si prefieres que la imagen ajuste el tamaño */
+    /*background-position: center center; /* Centra la imagen en el fondo */
+    background-color: #e9a91e; /* Color de fondo alternativo en caso de que la imagen no cargue */
+    padding-top: 70px;
+}
+.flan_img{
+    width:200px;
+    height: auto;
+}
+.logo-section {
+margin: 20px;
+}
+.navbar {
+    justify-content: center;
+}
+.navbar-nav {
+    text-align: center;
+}
+.navbar-nav .nav-item {
+    display: inline-block;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-body {
+    flex: 1 0 auto;
+}
+.card-footer {
+    flex-shrink: 0; /* Evita que el pie de página se reduzca y se mantenga en la parte inferior */
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Ajusta el número de líneas a mostrar, puedes cambiarlo según sea necesario */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn-primary {
+    margin-top: auto;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se recorte en lugar de estirarse */
+}
+.about-container {
+    padding: 2rem;
+}
+.about-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.img-acerca, .img-acerca-2 {
+    display: block; /* Hace que la imagen se trate como un bloque, lo que facilita su alineación */
+    margin-left: auto; /* Margen automático para centrar horizontalmente */
+    margin-right: auto; /* Margen automático para centrar horizontalmente */
+}
+
+.img-acerca {
+    height: 500px; /* Tamaño específico para la primera imagen */
+}
+
+.img-acerca-2 {
+    height: 550px; /* Tamaño específico para la segunda imagen */
+}
+.about-content {
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+.margen-contenido {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.margen-login{
+    margin: 20px;
+}
+.custom-navbar {
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho de la página */
+    z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
+    background-color: #7e7e7e; /* Color de fondo del navbar */
+    /* Puedes agregar otros estilos aquí según sea necesario */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según tus preferencias */
+}
+

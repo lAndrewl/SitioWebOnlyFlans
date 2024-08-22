@@ -1,0 +1,38 @@
+# Ignorar archivos y directorios del entorno virtual
+venv/
+env/
+EntVirOF/
+.env
+# Ignorar archivos de compilación de Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar archivos de configuración del editor
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+.idea/
+
+# Ignorar archivos de base de datos
+db.sqlite3
+
+# Ignorar archivos de configuración de Django
+*.log
+*.pot
+*.mo
+
+# Ignorar archivos de medios y archivos estáticos
+/media/
+staticfiles/
+
+# Ignorar archivos de configuración de Docker
+docker-compose.yml
+Dockerfile
+
+# Ignorar archivos de configuración de PyCharm
+.idea/
+
+# Ignorar archivos y directorios de caché
+*.cache
+*.tmp

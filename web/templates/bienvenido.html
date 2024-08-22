@@ -1,0 +1,33 @@
+{% extends "./base.html" %}
+{% block titulo %}
+    Bienvenido
+{% endblock %}
+{% block contenido %}
+{% if show_welcome_message %}
+<div class="alert alert-success margen-contenido" role="alert">
+    <h4 class="alert-heading">¡Bienvenido! {{ user.get_username }}.</h4>
+    <p>Esta es una página exclusiva para usuarios registrados.</p>
+    <hr>
+    <p class="mb-0">¡Gracias por iniciar sesión!</p>
+</div>
+{% endif %}
+<div class="container margen-contenido">
+    <div class="row">
+        {% for flan in flanes_privados %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card" style="width: 100%;">
+                <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen Flan">
+                <div class="card-body">
+                    <h5 class="card-title">{{ flan.name }}</h5>
+                    <p class="card-text">{{ flan.description }}</p>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">Precio: CLP {{ flan.precio }}</p>
+                    <a href="#" class="btn btn-primary">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
