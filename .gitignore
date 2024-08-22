@@ -1,3 +1,4 @@
+.gitignore
 # Ignorar archivos y directorios del entorno virtual
 venv/
 env/
